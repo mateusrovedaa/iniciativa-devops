@@ -1,4 +1,4 @@
-# Aula 1
+# Aula 2
 Esse repositório contém o código do desafio da aula 2 sobre Kubernetes.
 
 # Dependências

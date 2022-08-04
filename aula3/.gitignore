@@ -1,0 +1,7 @@
+**/.terraform/
+.tmp/*/*
+!.tmp/.gitkeep
+!.tmp/*/.gitkeep
+.infracost
+*.tmp
+kube_config.yaml

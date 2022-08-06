@@ -40,6 +40,7 @@ kind: Deployment
 metadata:
   name: kubenews
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: kubenews
@@ -47,6 +48,10 @@ spec:
     metadata:
       labels:
         app: kubenews
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+        prometheus.io/path: "/metrics"
     spec:
       containers:
         - name: kubenews
